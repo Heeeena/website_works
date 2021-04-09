@@ -1,0 +1,196 @@
+html {
+	background-color: #D5C9BD;
+}
+
+
+body {
+	margin: 0;
+}
+
+a {
+	float: right;
+	text-decoration-line: none;
+}
+
+ul a {
+	padding: 8px;
+	text-align: center;
+	display: block;
+}
+
+
+/* Nav */
+
+.nav {
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	top: 0;
+}
+
+.nav {
+	background: #78120E;
+	color: #D4D4D4;
+	&__title {
+		margin: px 30px;
+	}
+
+	&__item {
+		display: inline-block;
+		margin: 0px 30px;
+	}
+}
+
+.nav__title {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	margin-left: 50px;
+	font-size: 25px;
+	color: #D4D4D4;
+}
+
+.nav__item {
+	font-family: 'Fugaz One', cursive;
+	text-align: center;
+	margin-right: 40px;
+	font-size: 14px;
+	color: #D4D4D4;
+	
+}
+.nav__title:hover {
+	transition: .2s ease;
+	color: #D1B04F;
+}
+
+.nav__item:hover {
+	transition: .2s ease;
+	color: #D1B04F;
+}
+.nav__item:active {
+	text-decoration: none;
+}
+.nav__item:link {
+	text-decoration: none;
+}
+.nav__item:visited {
+	text-decoration: none;
+}
+
+/* Box */
+
+.yee {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.working:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.square {
+	background-color: #C56E69;
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+	margin: 100px;
+
+}
+
+.image{
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.overlay{
+	
+}
+
+.middle{
+	color: #D4D4D4;
+	font-family: 'Fugaz One', cursive;
+	font-size: 25px;
+	transition: .5s ease;
+	opacity: 0;
+	bottom: 100%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -130%);
+}
+
+.middle:hover {
+	color: #D1B04F;
+}
+.middle:active {
+	color: #78120E;
+}
+.middle:link {
+	text-decoration: none;
+}
+.middle:visited {
+	text-decoration: none;
+}
+
+.square:hover .image{
+	opacity: 0.3;
+}
+
+.square:hover .middle{
+	opacity: 1;
+}
+
+@media screen and (max-width: 780px) {
+	.square {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.round{
+	position: absolute;
+	display: flex;
+	float: right;
+	justify-content: space-between;
+	right: 50px;
+	margin: 10px;
+	z-index: 2;
+
+}
+
+.redc{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #78120E;
+	border-radius: 50%;
+
+}
+
+.yellowc{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #D1B04F;
+	border-radius: 50%;
+	margin-left: 17px;
+	
+}
+
+.greenc{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #186143;
+	border-radius: 50%;
+	margin-left: 35px;
+
+}
